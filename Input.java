@@ -17,8 +17,17 @@ public class Input {
         Scanner input3 = new Scanner(System.in);
         int num = input3.nextInt();
         System.out.println("This is your integer : "+num);
+
+        //not using scanner class because already scanner class is used in this file
+
+        String name = input.next();
+        System.out.println(name);
+        float mark = input.nextFloat();
+        System.out.println(mark);
     }    
 }
+
+
 
 
 

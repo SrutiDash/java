@@ -9,5 +9,7 @@ public class Primitives {
         long largeInt = 3243345596786754654L;
         boolean check = false;
         System.out.println(number + " " + marks + " " + letter + " " + largeDecimal + " " + largeInt + " " + check);
+        int salary = 345_000_000;
+        System.out.println(salary);
     }    
 }
