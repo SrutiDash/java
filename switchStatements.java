@@ -19,5 +19,23 @@ public class switchStatements {
         }else if(fruit.equals("orange")){
             System.out.println("orange colored fruit");
         }
+
+        //instead of this add switch statements :
+
+        System.out.println("Enter a fruit from Mango Apple and Orange : ");
+        String fruits = input.nextLine();
+        switch(fruits){
+            case "Mango":
+                System.out.println("Yellow colored sweet fruit");
+                break;
+            case "Apple":
+                System.out.println("a red colored fruit");   
+                break;
+            case "Orange":
+                System.out.println("orange colored fruit");    
+                break;
+            default:
+                System.out.println("not a fruit");         
+        }
     }
 }
