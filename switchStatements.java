@@ -37,5 +37,16 @@ public class switchStatements {
             default:
                 System.out.println("not a fruit");         
         }
+        //enhanced switch statement
+
+        System.out.println("Enter a fruit from Mango Apple and Orange : ");
+        String fruit1 = input.nextLine();
+        switch(fruit1){
+            case "Mango" -> System.out.println("Yellow colored sweet fruit");
+            case "Orange" -> System.out.println("Yorange colored fruit");
+            case "Apple" -> System.out.println("a red colored fruit");
+            case "Grapes" -> System.out.println("green colored sweet fruit");
+            default -> System.out.println("not a fruit");
+        }
     }
 }
