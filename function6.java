@@ -11,8 +11,11 @@ public class function6 {
         //for third method
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your name : ");
-        // String name = input.nextLine();
-        String myMessage = yourMessage(input.nextLine());
+        //can do in this way
+        String name = input.nextLine();
+        String myMessage = yourMessage(name);
+        //or can directly use it like this 
+        // String myMessage = yourMessage(input.nextLine());
         System.out.println("Your message is : "+myMessage);
 
     }
