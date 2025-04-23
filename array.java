@@ -31,6 +31,5 @@ public class array {
         // 0, 2, 4 ... these are objects only
         // for this there can be reference variable as well like
         // for 0, it's areference variable is arr[0], for 4 it's arr[3]
-
     }
 }
