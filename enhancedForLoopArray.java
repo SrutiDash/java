@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class enhancedForLoopArray {
@@ -10,6 +11,7 @@ public class enhancedForLoopArray {
         for(int i=0;i<arr.length;i++){
             arr[i] = input.nextInt();
         }
+        System.out.println(Arrays.toString(arr)); // here it will print it in an array format
         //enhanced for loop / for each loop : 
         //syntax for  for each loop :
     
