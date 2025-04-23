@@ -24,7 +24,13 @@ public class array {
         String[] arr = new String[7];
         System.out.println(arr[5]);
         //for string it is null if no specifix values  has been initualies to it
-        //primitive datatypes are being stored in stack memory lie int char boolean
+        //primitive datatypes are being stored in stack memory like int char boolean
         //where as non primitive type and other objects being stored in heap memory
+        // in the heap memory when the array has been stored
+        // [0,2,3,4,5] like this
+        // 0, 2, 4 ... these are objects only
+        // for this there can be reference variable as well like
+        // for 0, it's areference variable is arr[0], for 4 it's arr[3]
+
     }
 }
