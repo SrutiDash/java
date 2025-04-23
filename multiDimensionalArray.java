@@ -26,5 +26,12 @@ public class multiDimensionalArray {
         System.out.println(Arrays.toString(array[1]));
         //so print 2D array we need to print it like this :
         System.out.println(array[1][2]);
+        //2D arrray can have varible number of  individual array :
+        int[][] array1 = {
+            {1, 2, 3},
+            {4, 5},
+            {6, 7, 8, 9}
+        };
+        System.out.println(array1[2][3]);
     }
 }
