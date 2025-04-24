@@ -23,6 +23,13 @@ public class input2DArrayCol {
         for(int row=0;row<arr.length;row++){
             System.out.println(Arrays.toString(arr[row]));
         }
+
+        //or for enhanced for loop :
+
+        System.out.println("Again printing with enhanced for loop : ");
+        for(int[] a : arr){
+            System.out.println(Arrays.toString(a));
+        }
     }
     
 }
