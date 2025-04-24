@@ -36,5 +36,13 @@ public class arrayList {
         }
 
         System.out.println("Your array list is : "+list2);
+        //how to get index :
+        System.out.println("ArrayList index is here : ");
+        for(int i=0;i<length;i++){
+            System.out.print(list2.get(i));
+        }
+
+        //we can use direct sout to print the array list in form or array or by using this for loop and list.get method
+        
     }
 }
