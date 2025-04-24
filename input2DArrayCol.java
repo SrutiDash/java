@@ -17,6 +17,7 @@ public class input2DArrayCol {
             }
         }
 
+        System.out.println("hjaghz");
         System.out.println("Your 2D array : ");
 
         for(int row=0;row<arr.length;row++){
