@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 import java.util.ArrayList;
 
 public class arrayList {
@@ -19,5 +21,20 @@ public class arrayList {
         //list.contains check whether this list contains the value which we have given or not
         list.set(2, 255); //it will replace and update the value associated index 
         System.out.println(list);
+        list.remove(4); //it will remove that index
+        System.out.println(list);
+
+        //if we want it iterate it/take user input from it :
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the number of values yoy want to iterate : ");
+        int length = input.nextInt();
+        ArrayList<Integer> list2 = new ArrayList<>();
+        for(int i=0;i<length;i++){
+            System.out.println("Enter the values you want to add inisde the array list : ");
+            list2.add(input.nextInt());
+        }
+
+        System.out.println("Your array list is : "+list2);
     }
 }
