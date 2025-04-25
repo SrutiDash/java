@@ -45,12 +45,19 @@ public class linearSearch {
             return -1;
         }
 
-        for(int index=0;index<arr.length;index++){
-            int element = arr[index];
+        // for(int index=0;index<arr.length;index++){
+        //     int element = arr[index];
+        //     if(element==target){
+        //         return element;
+        //     }
+        // }   //normal for loop
+
+        for (int element : arr) {
             if(element==target){
                 return element;
             }
-        }
+        }      //for each loop
+        
         //if the element not found : 
         return -1;
     }
