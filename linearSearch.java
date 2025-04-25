@@ -17,6 +17,8 @@ public class linearSearch {
         int ans = linearSearch(num, target);
         System.out.println("Array index of "+target+" is : ");
         System.out.println(ans); 
+        int ans2 = linearSearch2(num, target);
+        System.out.println("Element is "+ ans2);
 
     }
     
@@ -33,7 +35,23 @@ public class linearSearch {
                 return index;
             }
         }
-    
+        //if the element not found : 
+        return -1;
+    }
+
+    //if i want to return the lement if the target not the index we can simply use this : 
+    static int linearSearch2(int[] arr, int target){
+        if(arr.length==0){
+            return -1;
+        }
+
+        for(int index=0;index<arr.length;index++){
+            int element = arr[index];
+            if(element==target){
+                return element;
+            }
+        }
+        //if the element not found : 
         return -1;
     }
 }
