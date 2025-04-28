@@ -2,6 +2,8 @@ public class linearSearchEvenDigit {
     public static void main(String[] args) {
         int[] arr = {12,345,2,6,7986};
         System.out.println("The number is even? : "+evenDigits(arr, 1));
+        int[] nums = {12,3452,2,6,7986};
+        System.out.println(findNum(nums));
     }
 
     //normal check
@@ -16,5 +18,32 @@ public class linearSearchEvenDigit {
     }
 
     //inside the array element :
-    
+    static int findNum(int[] num){
+        int count = 0;
+        for(int n : num){
+            if(even(n)){
+                count++;
+            }
+        }
+        return count;
+    }
+
+    //function to check whether the number has even digits or not?
+    static boolean even(int num){
+        int numOfDigits = digits(num);
+        if(numOfDigits%2==0){
+            return true;
+        }
+        return false;
+    }
+
+    //count no of digits in a number : 
+    static int digits(int num){
+        int count = 0;
+        while(num>0){
+            count++;
+            num = num/10;        
+        }
+        return count;
+    }
 }
