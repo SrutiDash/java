@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class linearSearch2DArray {
     public static void main(String[] args) {
         int[][] arr= {
@@ -9,7 +11,9 @@ public class linearSearch2DArray {
         int target = 6;
 
         int[] ans = LinearSearch2DArray(arr, target);
+        System.out.println(Arrays.toString(ans));
 
+        //more precision : 
         if(ans[0]!= -1){
             System.out.println("Element "+target+" is found at row "+(ans[0]+1)+" and column "+(ans[1]+1));
         }else{
