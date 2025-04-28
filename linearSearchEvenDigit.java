@@ -4,6 +4,12 @@ public class linearSearchEvenDigit {
         System.out.println("The number is even? : "+evenDigits(arr, 1));
         int[] nums = {12,3452,2,6,7986};
         System.out.println(findNum(nums));
+        System.out.println(digits1(1221324));
+    }
+
+
+    static int digits1(int num){
+        return (int)(Math.log10(num))+1;
     }
 
     //normal check
